@@ -50,3 +50,28 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+
+
+$(document).ready(function() {
+    $('.contact-form').on('submit', function(e) {
+        let isValid = true;
+
+        $(this).find('input[required], textarea[required]').each(function() {
+            if ($(this).val().trim() === '') {
+                isValid = false;
+                $(this).css('border', '1px solid red'); // подсветка пустого поля
+            } else {
+                $(this).css('border', ''); // убираем подсветку если поле заполнено
+            }
+        });
+
+        if (!isValid) {
+            e.preventDefault(); // если есть пустые поля — форма не отправляется
+            alert('Пожалуйста, заполните все обязательные поля!');
+        } else {
+            alert('Спасибо за ваш отзыв!'); 
+        }
+    });
+});
+
+
