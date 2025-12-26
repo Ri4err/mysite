@@ -110,28 +110,17 @@
         </div>
     </div>
     </section>
-        <section class="contact" id="contact">
-        <h1 class="fonth1">Оставить отзыв можно здесь</h1>
-        <form action="https://getform.io/f/bwnvwgda" method="POST" class="contact-form" id="reviewForm">
-    <div class="form-group">
-        <input type="text" name="name" id="reviewName" placeholder="Ваше имя" required>
-        <div class="error-message" id="nameError"></div>
-    </div>
-    <div class="form-group">
-        <input type="email" name="email" id="reviewEmail" placeholder="Ваш Email" required>
-        <div class="error-message" id="emailError"></div>
-    </div>
-    <div class="form-group">
-        <textarea name="message" id="reviewMessage" placeholder="Ваше сообщение" required></textarea>
-        <div class="error-message" id="messageError"></div>
-    </div>
-    <input type="hidden" name="_gotcha" style="display:none !important">
-    <button type="submit" class="button">Отправить</button>
-</form>
+       <form action="https://getform.io/f/bwnvwgda" method="POST" class="contact-form">
+            <input type="text" name="name" placeholder="Ваше имя" required>
+            <input type="email" name="email" placeholder="Ваш Email" required>
+            <textarea name="message" placeholder="Ваше сообщение" required></textarea>
+            <input type="hidden" name="_gotcha" style="display:none !important">
+            <button type="submit" class="button">Отправить</button>
+       </form>
     </section>  
     <script src="jquery-3.7.1.min.js"></script>
     <script src="script.js"></script>
     </body>
-
 </html>
+
 
