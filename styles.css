@@ -451,8 +451,19 @@ body {
     margin-bottom: 20px;
 }
 
-.contact-form input.error,
-.contact-form textarea.error {
-    border: 2px solid red;
-    outline: none;
+.error-message {
+    color: #ff3860;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.input-error {
+    border: 1px solid #ff3860 !important;
+}
+
 }
